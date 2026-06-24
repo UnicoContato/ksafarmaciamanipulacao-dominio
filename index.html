@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA MANIPULACAO</title>
+    <meta name="description" content="A KSA nasceu do propósito de transformar fórmulas em soluções reais para a vida das pessoas.">
+    <meta property="og:title" content="SA MANIPULACAO">
+    <meta property="og:description" content="A KSA nasceu do propósito de transformar fórmulas em soluções reais para a vida das pessoas.">
+    <meta property="og:image" content="https://ksafarmaciamanipulacao.com.br/img/1.jpeg">
+    <meta property="og:url" content="https://ksafarmaciamanipulacao.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#ef4444',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-950 via-slate-900 to-red-950 text-white antialiased overflow-x-hidden min-h-screen flex flex-col relative">
+
+    <div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/30 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-red-600/30 rounded-full blur-[120px]"></div>
+    </div>
+
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-transform duration-300 bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold tracking-wider text-white">SA MANIPULACAO <span class="text-sm font-normal text-gray-300"></span></a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-gray-200 hover:text-white transition">Início</a>
+                    <a href="#sobre" class="text-gray-200 hover:text-white transition">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-200 hover:text-white transition">Serviços</a>
+                    <a href="#galeria" class="text-gray-200 hover:text-white transition">Galeria</a>
+                    <a href="#contato" class="text-gray-200 hover:text-white transition">Contato</a>
+                    <a href="https://wa.me/5579998217314" target="_blank" class="flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-5 py-2.5 rounded-full font-medium transition shadow-lg shadow-green-900/50">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-gray-300 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-white/10">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#inicio" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10">Início</a>
+                <a href="#sobre" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10">Sobre Nós</a>
+                <a href="#servicos" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10">Serviços</a>
+                <a href="#galeria" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10">Galeria</a>
+                <a href="#contato" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10">Contato</a>
+                <a href="https://wa.me/5579998217314" target="_blank" class="block mt-4 text-center bg-green-600 text-white px-5 py-3 rounded-xl font-medium shadow-lg">Peça pelo WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="inicio" class="relative h-screen flex items-center justify-center">
+            <div class="absolute inset-0 z-0">
+                <img src="img/1.jpeg" alt="Interior da Farmácia" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-slate-950/70"></div>
+            </div>
+            
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-xl text-white">
+                    SA MANIPULACAO <span class="block text-2xl md:text-3xl font-light mt-4 text-gray-200">Cuidando de você!</span>
+                </h1>
+                <a href="https://wa.me/5579998217314" target="_blank" class="inline-flex items-center gap-3 bg-primary hover:bg-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-xl shadow-red-900/50">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Faça seu Pedido
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="glass-card p-10 md:p-14 rounded-3xl text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">Sobre Nós</h2>
+                <div class="space-y-6 text-lg text-gray-300 leading-relaxed text-justify md:text-center">
+                    <p>A KSA nasceu do propósito de transformar fórmulas em soluções reais para a vida das pessoas.</p>
+                    <p>Fundada pela farmacêutica Karla Dantas, a empresa surgiu da paixão pela manipulação magistral e da crença de que cada paciente é único, com necessidades, objetivos e características que merecem uma abordagem personalizada.</p>
+                    <p>Mais do que uma farmácia de manipulação, a KSA é uma parceira na construção da saúde, da beleza e da alta performance. Trabalhamos com rigor técnico, matérias-primas de qualidade, processos seguros e acompanhamento especializado para desenvolver fórmulas individualizadas que atendam às necessidades de cada paciente e às prescrições de profissionais da saúde.</p>
+                    <p>Nossa atuação abrange diferentes áreas, como suplementação nutricional, saúde integrativa, performance física e mental, dermatologia, estética, equilíbrio hormonal e bem-estar, sempre com foco na excelência e na segurança.</p>
+                    <p>Acreditamos que manipular não é apenas produzir cápsulas, sachês ou cosméticos. É entender pessoas, traduzir necessidades em soluções e contribuir para resultados reais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Nossos Serviços</h2>
+                <p class="mt-4 text-xl text-gray-400">Soluções personalizadas para o seu bem-estar</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl text-center fade-in delay-100 hover:bg-white/20 transition-all cursor-default">
+                    <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Medicamentos</h3>
+                    <p class="text-gray-300">Fórmulas manipuladas com rigor científico e precisão para tratamentos específicos e personalizados.</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center fade-in delay-200 hover:bg-white/20 transition-all cursor-default">
+                    <svg class="w-12 h-12 text-primary-DEFAULT mx-auto mb-4" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Perfumaria</h3>
+                    <p class="text-gray-300">Produtos dermatológicos e cosméticos desenvolvidos exclusivamente para a sua pele e estética.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl text-center fade-in delay-300 hover:bg-white/20 transition-all cursor-default">
+                    <svg class="w-12 h-12 text-primary mx-auto mb-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.em" stroke-linecap="round"/>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Atendimento</h3>
+                    <p class="text-gray-300">Acompanhamento especializado para garantir a eficácia e segurança em todas as etapas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Galeria</h2>
+                <p class="mt-4 text-xl text-gray-400">Conheça nossa estrutura moderna e laboratórios</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="glass-card overflow-hidden rounded-xl h-80 fade-in delay-100 group">
+                    <img src="img/1.jpeg" alt="Laboratório KSA 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="glass-card overflow-hidden rounded-xl h-80 fade-in delay-200 group">
+                    <img src="img/2.jpeg" alt="Laboratório KSA 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="glass-card overflow-hidden rounded-xl h-80 fade-in delay-300 group">
+                    <img src="img/3.jpeg" alt="Laboratório KSA 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="glass-card overflow-hidden rounded-xl h-80 fade-in delay-300 group">
+                    <img src="img/4.jpeg" alt="Laboratório KSA 4" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="glass-card overflow-hidden rounded-xl h-80 fade-in delay-300 group">
+                    <img src="img/5.jpeg" alt="Laboratório KSA 5" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-10">
+            <div class="glass-card rounded-3xl overflow-hidden shadow-2xl fade-in">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-10 md:p-14 bg-white/5">
+                        <h2 class="text-3xl font-bold mb-8 text-white">Contato e Localização</h2>
+                        
+                        <div class="space-y-6 text-gray-200">
+                            <div>
+                                <h4 class="text-sm text-gray-400 font-semibold tracking-wider uppercase">Razão Social</h4>
+                                <p class="text-lg">KSA FARMACEUTICA LTDA</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-gray-400 font-semibold tracking-wider uppercase">CNPJ</h4>
+                                <p class="text-lg">60.799.172/0001-07</p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-gray-400 font-semibold tracking-wider uppercase">Endereço</h4>
+                                <p class="text-lg">
+                                    LRG SANTO ANTONIO, 17<br>
+                                    CENTRO<br>
+                                    ITABAIANA - SE<br>
+                                    CEP: 49.500-196
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-gray-400 font-semibold tracking-wider uppercase">Contato</h4>
+                                <p class="text-lg">Telefone: (79) 9924-5608</p>
+                                <p class="text-lg">E-mail: KARLA@FARMACIASA.COM.BR</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <a href="https://wa.me/557999245608" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-lg font-medium transition w-full justify-center md:w-auto shadow-lg shadow-green-900/50">
+                                Fale Conosco
+                            </a>
+                        </div>
+                    </div>
+                    <div class="h-[500px] lg:h-auto relative bg-slate-800">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.957973715878!2d-37.4282333!3d-10.6833329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x710185c7cb40d5b%3A0xc66512eb224edc84!2sLargo%20Santo%20Ant%C3%B4nio%2C%2017%20-%20Centro%2C%20Itabaiana%20-%20SE%2C%2049500-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="absolute inset-0 grayscale opacity-80 mix-blend-luminosity hover:mix-blend-normal hover:grayscale-0 hover:opacity-100 transition duration-500">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-card border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-white font-bold text-xl mb-1">SA MANIPULACAO</p>
+                    <p class="text-gray-400 text-sm">KSA FARMACEUTICA LTDA | CNPJ: 60.799.172/0001-07</p>
+                    <p class="text-gray-500 text-xs mt-2">&copy; <span id="year"></span> Todos os direitos reservados.</p>
+                </div>
+                <div>
+                    <button id="open-modal-btn" class="text-gray-300 hover:text-white transition text-sm underline underline-offset-4">Política de Privacidade</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="modal-overlay"></div>
+        <div class="relative bg-slate-900 border border-white/20 w-full max-w-2xl rounded-2xl shadow-2xl p-6 md:p-10 max-h-[90vh] overflow-y-auto">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-white mb-6">Política de Privacidade</h3>
+            <div class="space-y-4 text-gray-300 text-sm leading-relaxed">
+                <p>A sua privacidade é importante para nós. É política da SA+ MANIPULACAO respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site.</p>
+                <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
+                <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+                <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+                <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais.</p>
+            </div>
+            <div class="mt-8 text-right">
+                <button id="close-modal-btn-bottom" class="bg-primary hover:bg-red-500 text-white px-6 py-2 rounded-lg font-medium transition">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
